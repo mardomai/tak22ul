@@ -1,28 +1,34 @@
-päevik = {
-"eesnimi": "Mardo",
-"perenimi": "Mai",
-"elukoht": "Kuressaare",
-"lemmik magustoit": "Jäätis"
+dictionary = {
+   "ees-nimi=": "Mardo",
+   "perekonna-nimi=": "Mai",
+   "sünni-aasta=": "2006",
+   "elamis-koht=": "Uduvere",
+   "lemmik-magustoit=": "Jäätis"
 }
 
-print(päevik.get("elukoht"))
-print(päevik["elukoht"])
+#print(dictionary.get("living_place"))
+#print(dictionary["living_place"])
 
-päevik.update({"lemmik magustoit": "Pannkook" })
+dictionary.update({"lemmik-magustoit=": "Ice cream" })
 
-print(päevik.keys())
+#print(dictionary.keys())
 
-print(päevik.values())
+#print(dictionary.values())
 
-if 'isikukood' in päevik :
-    print("On isikukood")
+for x, y in dictionary.items():
+  print(x, y)
+
+ 
+
+if 'ID' in dictionary :
+    print("Have ID")
 else:
-    print("Pole isikukoodi")
+    print("No have ID")
 
-print(len(päevik))
+print(len(dictionary))
 
-päevik.update({"pikkus": len(päevik)})
+dictionary.update({"length": len(dictionary)})
 
-päevik.pop("sünniaasta")
+dictionary.pop("sünni-aasta=")
 
-del päevik
+del dictionary
