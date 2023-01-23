@@ -24,4 +24,4 @@ for key in total_revenue:
     commission[key] = round(sum(total_revenue[key])*0.062)
 
 for key,value in commission.items():
-    print(f"{key} Commission is: {value}")
+    print(f"{key} : {value}")
