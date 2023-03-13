@@ -6,14 +6,7 @@ dictionary = {
    "lemmik-magustoit=": "Jäätis"
 }
 
-#print(dictionary.get("living_place"))
-#print(dictionary["living_place"])
-
 dictionary.update({"lemmik-magustoit=": "Ice cream" })
-
-#print(dictionary.keys())
-
-#print(dictionary.values())
 
 for x, y in dictionary.items():
   print(x, y)
